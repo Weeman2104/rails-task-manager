@@ -1,7 +1,4 @@
 <%= form_with model: @task do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :details %>
-<%= f.text_field :details %>
+<%= render "form", f: f %>
 <%= f.submit "Update Task", disable_with: 'Updating...' %>
 <% end %>
